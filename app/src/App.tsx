@@ -1,6 +1,6 @@
+import { invoke } from "@tauri-apps/api/core";
 import { useState } from "preact/hooks";
 import preactLogo from "./assets/preact.svg";
-import { invoke } from "@tauri-apps/api/core";
 import "./App.css";
 
 function App() {
@@ -17,13 +17,13 @@ function App() {
       <h1>Welcome to Tauri + Preact</h1>
 
       <div class="row">
-        <a href="https://vite.dev" target="_blank">
+        <a href="https://vite.dev" target="_blank" rel="noopener">
           <img src="/vite.svg" class="logo vite" alt="Vite logo" />
         </a>
-        <a href="https://tauri.app" target="_blank">
+        <a href="https://tauri.app" target="_blank" rel="noopener">
           <img src="/tauri.svg" class="logo tauri" alt="Tauri logo" />
         </a>
-        <a href="https://preactjs.com" target="_blank">
+        <a href="https://preactjs.com" target="_blank" rel="noopener">
           <img src={preactLogo} class="logo preact" alt="Preact logo" />
         </a>
       </div>
@@ -31,14 +31,14 @@ function App() {
 
       <form
         class="row"
-        onSubmit={(e) => {
+        onSubmit={e => {
           e.preventDefault();
           greet();
         }}
       >
         <input
           id="greet-input"
-          onInput={(e) => setName(e.currentTarget.value)}
+          onInput={e => setName(e.currentTarget.value)}
           placeholder="Enter a name..."
         />
         <button type="submit">Greet</button>
