@@ -2,5 +2,20 @@
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "useGitignore": true,
   "ignorePaths": ["pnpm-lock.yaml"],
-  "words": ["lefthook", "tauri", "tombi", "tsgo", "uzmoi"]
+  "words": [
+    "cdylib",
+    "evenodd",
+    "iconify",
+    "lefthook",
+    "preact",
+    "rlib",
+    "serde",
+    "staticlib",
+    "tauri",
+    "tombi",
+    "tsgo",
+    "uzmoi",
+    "vite",
+    "xlink"
+  ]
 }
